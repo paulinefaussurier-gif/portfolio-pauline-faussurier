@@ -6,11 +6,11 @@ const manrope = Manrope({ subsets: ["latin"], variable: "--font-display", displa
 const inter = Inter({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio.example.com"),
-  title: "Pauline Faussurier — AI & Automation Operator",
+  metadataBase: new URL("https://pauline-faussurier-portfolio.vercel.app"),
+  title: "Pauline Faussurier, AI & Automation Operator",
   description: "Portfolio de systèmes, d’automatisations métier et d’agents IA conçus pour transformer les données en décisions opérationnelles.",
   openGraph: {
-    title: "Pauline Faussurier — AI & Automation Operator",
+    title: "Pauline Faussurier, AI & Automation Operator",
     description: "Des processus métier complexes transformés en systèmes automatisés, intelligents et pilotables.",
     type: "website",
     locale: "fr_FR",
