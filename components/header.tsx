@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
-const links = [["Expertise", "/expertise"], ["Projets", "/projets"], ["Parcours", "/parcours"], ["À propos", "/#a-propos"], ["Contact", "/#contact"]];
+const links = [["Expertise", "/expertise"], ["Projets", "/projets"], ["Parcours", "/parcours"], ["Contact", "/#contact"]];
 
 export function Header() {
   const [open, setOpen] = useState(false);

@@ -4,6 +4,13 @@ import { PageHero } from "@/components/page-hero";
 import { SiteFooter } from "@/components/site-footer";
 import { portfolio } from "@/data/portfolio";
 
+export const metadata: Metadata = {
+  title: "Expertise en IA et automatisation métier",
+  description: "L’expertise de Pauline Faussurier pour analyser les processus, structurer les données et concevoir des automatisations et agents IA fiables.",
+  alternates: { canonical: "/expertise" },
+  openGraph: { url: "/expertise", title: "Expertise en IA et automatisation métier | Pauline Faussurier", description: "Des systèmes IA pensés pour les opérations, les données et les usages réels des équipes." },
+};
+
 const contexts = [
   ["Le point de départ", "Un processus réel, avec ses habitudes, ses contraintes, ses outils et ses zones floues."],
   ["Le travail de fond", "Rendre explicites les données, les règles, les dépendances, les responsabilités et les exceptions."],
@@ -20,9 +27,10 @@ const abilities = [
 ];
 
 export default function ExpertisePage() {
-  return <main><Header /><PageHero code="EXPERTISE / 01" title="Concevoir des systèmes qui tiennent dans la réalité." intro="Mon expertise se situe à l’interface entre opérations, données, utilisateurs et IA. Je pars du processus métier pour construire le bon niveau d’automatisation — pas l’inverse." />
+  return <main><Header /><PageHero code="EXPERTISE / 01" title="Des systèmes pensés pour le terrain." intro="Une expertise à l’interface des opérations, des données, des utilisateurs et de l’IA. Le processus métier guide le niveau d’automatisation, et non l’inverse." />
     <section className="section shell expertise-context"><div className="compact-heading"><h2>Avant l’automatisation, il y a un travail de clarification.</h2><p>Une automatisation utile ne se résume pas à connecter des outils. Elle doit comprendre le contexte dans lequel une équipe travaille et les décisions qu’elle cherche à prendre.</p></div><div className="context-rail">{contexts.map(([title,text],i)=><article key={title}><span>0{i+1}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
     <section className="expertise-field"><div className="shell"><div className="compact-heading light"><h2>De la friction au système.</h2><p>Six capacités qui forment une seule chaîne de travail.</p></div><div className="ability-grid">{abilities.map(([Icon,title,text],i)=><article key={title as string}><div><Icon size={22}/><span>{String(i+1).padStart(2,"0")}</span></div><h3>{title as string}</h3><p>{text as string}</p></article>)}</div></div></section>
-    <section className="section shell"><div className="expertise-layers"><div><h2>Trois niveaux, un même système.</h2><p>Je peux intervenir sur une brique précise ou sur l’ensemble du dispositif, du cadrage jusqu’au pilotage.</p></div><div>{portfolio.pillars.map((pillar,i)=><article key={pillar.title}><span>{i+1}</span><div><h3>{pillar.title}</h3><p>{pillar.text}</p><ul>{pillar.items.map(item=><li key={item}>{item}</li>)}</ul></div></article>)}</div></div></section>
+    <section className="section shell"><div className="expertise-layers"><div><h2>Trois niveaux, un même système.</h2><p>Une intervention possible sur une brique précise ou sur l’ensemble du dispositif, du cadrage jusqu’au pilotage.</p></div><div>{portfolio.pillars.map((pillar,i)=><article key={pillar.title}><span>{i+1}</span><div><h3>{pillar.title}</h3><p>{pillar.text}</p><ul>{pillar.items.map(item=><li key={item}>{item}</li>)}</ul></div></article>)}</div></div></section>
     <section className="next-page"><a href="/projets" className="shell"><span>Étape suivante</span><strong>Voir cette expertise à l’œuvre.</strong><ArrowRight /></a></section><SiteFooter /></main>;
 }
+import type { Metadata } from "next";
