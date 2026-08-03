@@ -1,0 +1,90 @@
+export type Workflow = { label: string }[];
+
+export const portfolio = {
+  identity: {
+    name: "Pauline Faussurier",
+    role: "AI & Automation Operator",
+    statement: "Je transforme des processus métier complexes en systèmes automatisés, intelligents et pilotables.",
+    intro: "J’analyse les workflows, structure les données et conçois des agents IA capables d’assister les équipes dans leurs opérations quotidiennes.",
+    keywords: ["Automatisation métier", "Agents IA", "Operations", "Data workflows"],
+  },
+  links: {
+    email: "mailto:faussurierpauline@gmail.com",
+    linkedin: "https://www.linkedin.com/in/pauline-faussurier/",
+    booking: "",
+  },
+  proof: [
+    ["Startup IA B2B", "Une expérience au cœur d’un environnement technologique en construction."],
+    ["Périmètre transverse", "Opérations, produit, marketing et développement commercial."],
+    ["Création de systèmes", "Automatisations, agents spécialisés et processus de pilotage."],
+    ["Expérience entrepreneuriale", "Offres, coordination d’équipes et lancement de projets."],
+  ],
+  pillars: [
+    {
+      title: "Automatisations métier",
+      text: "Transformer les opérations manuelles et répétitives en workflows plus rapides, fiables et traçables.",
+      items: ["Collecte et consolidation", "Reporting et contrôles", "Alertes et préparation d’actions", "Synchronisation entre outils"],
+    },
+    {
+      title: "Agents et copilotes IA",
+      text: "Concevoir des agents spécialisés qui recherchent, analysent, qualifient et restituent l’information utile.",
+      items: ["Veille et analyses périodiques", "Synthèses opérationnelles", "Priorisation des actions", "Assistance à la décision"],
+    },
+    {
+      title: "Systèmes opérationnels",
+      text: "Construire l’environnement qui rend l’automatisation robuste, explicable et réellement utilisable.",
+      items: ["Processus et règles métier", "Organisation des données", "Exceptions et validation humaine", "Documentation et amélioration continue"],
+    },
+  ],
+  cases: [
+    {
+      id: "performance",
+      index: "A",
+      title: "Automatiser le pilotage de la performance",
+      context: "Cas développé dans le cadre du pilotage opérationnel d’une solution IA B2B déployée sur plusieurs sites.",
+      problem: "Une activité répartie sur plusieurs sites doit être suivie à partir de sources multiples, d’un périmètre évolutif et d’analyses répétitives. Les anomalies apparaissent trop tard et la connaissance métier reste dispersée.",
+      system: ["Récupérer les données de la période", "Identifier le périmètre actif", "Consolider et nettoyer", "Comparer les performances", "Détecter et qualifier les écarts", "Préparer une synthèse et les actions"],
+      human: "L’agent identifie, analyse et prépare. La personne responsable valide le diagnostic, traite les exceptions et décide des actions finales.",
+      value: "Un pilotage plus régulier, une lecture priorisée des écarts et un temps d’analyse recentré sur la décision.",
+      skills: ["Workflow multiétape", "Données opérationnelles", "Règles métier", "Agent spécialisé", "Human-in-the-loop"],
+      workflow: ["Sources", "Nettoyage", "Consolidation", "Règles métier", "Analyse", "Anomalies", "Recommandations", "Validation"],
+    },
+    {
+      id: "pipeline",
+      index: "B",
+      title: "Construire un pipeline commercial fiable",
+      context: "Un système de données conçu pour transformer un historique commercial dispersé en prochaines actions lisibles.",
+      problem: "Les informations commerciales vivent dans plusieurs outils, avec des formats hétérogènes, des doublons, des fiches incomplètes et des statuts difficiles à comparer.",
+      system: ["Centraliser les sources", "Normaliser les champs", "Traiter les doublons", "Qualifier la maturité", "Attribuer des priorités", "Préparer les données CRM et les actions"],
+      human: "L’équipe garde la décision commerciale. Le système fiabilise les données, signale les risques et propose les relances à arbitrer.",
+      value: "Un pipeline comparable, plus fiable et directement exploitable pour le suivi commercial.",
+      skills: ["Data cleaning", "CRM operations", "Qualification", "Scoring", "Automatisation commerciale"],
+      workflow: ["Sheets / CRM", "Normalisation", "Déduplication", "Qualification", "Scoring", "Recommandations", "Actions"],
+    },
+    {
+      id: "veille",
+      index: "C",
+      title: "Concevoir un agent de veille spécialisé",
+      context: "Une architecture périodique pensée pour distinguer le bruit, le changement réel et l’expérimentation utile.",
+      problem: "Dans un domaine qui évolue vite, la veille manuelle accumule des contenus répétés et de qualité variable, sans faire émerger les décisions ou tests prioritaires.",
+      system: ["Consulter les sources sélectionnées", "Collecter les nouveautés", "Éliminer les doublons", "Classer et regrouper", "Évaluer la pertinence", "Synthétiser les impacts et proposer des tests"],
+      human: "L’agent prépare une lecture structurée. L’équipe vérifie les signaux, choisit les expérimentations et capitalise les apprentissages.",
+      value: "Moins de bruit informationnel, une veille orientée impact et un passage plus court de l’information à l’expérimentation.",
+      skills: ["Agent de recherche", "Qualification", "Knowledge management", "Analyse métier", "Livrables décisionnels"],
+      workflow: ["Sources", "Collecte", "Filtrage", "Classification", "Analyse", "Synthèse", "Expérimentations"],
+    },
+  ],
+  startup: [
+    ["Marché et positionnement", "Marchés, utilisateurs, messages, supports, stratégie éditoriale et acquisition."],
+    ["Produit et utilisateurs", "Usages, problèmes terrain, traduction des retours et coordination équipes-utilisateurs."],
+    ["Opérations et données", "Performance, indicateurs, anomalies, processus, reporting et automatisations internes."],
+    ["Commerce et partenariats", "CRM, pipeline, opportunités, partenaires, dossiers et décisions commerciales."],
+  ],
+  method: [
+    ["01", "Comprendre", "Observer les utilisateurs, les données, les outils, les règles et les points de friction."],
+    ["02", "Structurer", "Clarifier les étapes, les responsabilités, les dépendances et les conditions de décision."],
+    ["03", "Automatiser", "Construire le workflow, l’agent ou le copilote adapté au niveau réel de complexité."],
+    ["04", "Sécuriser", "Prévoir les contrôles, les exceptions, la validation humaine et la qualité des données."],
+    ["05", "Améliorer", "Mesurer les résultats, identifier les erreurs et faire évoluer le système."],
+  ],
+} as const;
