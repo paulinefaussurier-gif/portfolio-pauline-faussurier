@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Local files
+.DS_Store
+*.log
+.env*.local
+
+# Codex working files
+work/
+outputs/
+review-*.png
+work-*.png
